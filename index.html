@@ -245,20 +245,113 @@ body::-webkit-scrollbar-thumb {
 .ico1 img {
     height: 120px;
 }
-.MyP {
-    background-color: #fff;
-}
-.abt {
-    background-color: #fff;
+.My {
+    color: #fff;
     margin-left: 10px;
 }
-.ct {
-    background-color: #fff;
+.My:hover {
+    color: #000;
+    opacity: 1;
+    transition: all 0.25s ease;
+}
+.My:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.My::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.1);
+    background:linear-gradient(rgb(0, 238, 255) , rgb(48, 255, 172));
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+.ab {
+    color: #fff;
     margin-left: 10px;
+}
+.ab:hover {
+    color: #000;
+    opacity: 1;
+    transition: all 0.25s ease;
+}
+.ab:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.ab::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.1);
+    background:linear-gradient(rgb(16, 248, 248) , rgb(10, 255, 169));
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+.ce {
+    color: #fff;
+    margin-left: 10px;
+}
+.ce:hover {
+    color: #000;
+    opacity: 1;
+    transition: all 0.25s ease;
+}
+.ce:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.ce::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.1);
+    background:linear-gradient(rgb(33, 255, 229) , rgb(57, 255, 163));
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.25s ease;
 }
 .co {
-    background-color: #fff;
+    color: #fff;
     margin-left: 10px;
+}
+.co:hover {
+    color: #000;
+    opacity: 1;
+    transition: all 0.25s ease;
+}
+.co:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.co::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.1);
+    background:linear-gradient(rgb(52, 255, 245) ,rgb(55, 255, 188));
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.25s ease;
 }
 .cer {
     color: #40fbd6;
@@ -270,6 +363,24 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     margin-top: 2rem;
     margin-right: 40px;
+}
+.b2w1 {
+    position: relative;
+}
+.b2w1:hover::after {
+    transform: scaleX(1);
+}
+.b2w1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #6f00ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.25s ease;
+
 }
     </style>
 </head>
@@ -284,18 +395,18 @@ body::-webkit-scrollbar-thumb {
                         </div>
                         <div class="M">
                             <a href="#about">
-                                <button class="MyP">About</button>
+                                <button class="My">About</button>
                             </a>
                         </div>
                         <div class="A">
                             <a href="#education">
-                                <button class="abt">Education</button>
+                                <button class="ab">Education</button>
                             </a>
                             
                         </div>
                         <div class="C">
                             <a href="#certificate">
-                                <button class="ct">Certificate</button>
+                                <button class="ce">Certificate</button>
                             </a>
                         </div>
                         <div class="Con">
